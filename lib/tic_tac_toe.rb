@@ -89,13 +89,13 @@ class TicTacToe
   turn_count == 9
  end
 
- #  def draw?
- #   !won? && full?
- # end
-
- def over?
-  won? || draw?
+  def draw?
+   !won? && full?
  end
+
+ # def over?
+ #  won? || draw?
+ # end
 
 #  def winner
 #   if winning_combo = won?
