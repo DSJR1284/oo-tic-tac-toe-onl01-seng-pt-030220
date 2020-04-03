@@ -92,13 +92,13 @@ class TicTacToe
 #  def over?
 #   won? || draw?
 #  end
-# 
+#
 #  def winner
 #   if winning_combo = won?
 #   board[winning_combo.first]
 #   end
 #  end
-# 
+#
 #  def play
 #    while !over?
 #      turn
