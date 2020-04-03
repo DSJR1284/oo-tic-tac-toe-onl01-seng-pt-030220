@@ -82,7 +82,7 @@ class TicTacToe
     position_taken?(combo[0])
     return combo
      end
-   end 
+   end
   return false
  end
 #
