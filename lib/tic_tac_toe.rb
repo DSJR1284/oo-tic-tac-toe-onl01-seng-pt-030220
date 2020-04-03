@@ -91,7 +91,6 @@ class TicTacToe
 
  #  def draw?
  #   !won? && full?
- #   end
  # end
 
  def over?
@@ -114,4 +113,4 @@ class TicTacToe
 #      puts "Draw Game"
 #    end
 # end
-# end
+end
