@@ -89,22 +89,23 @@ class TicTacToe
   turn_count == 9
  end
 
- def over?
-  won? || draw?
- end
-
- def winner
-  if winning_combo = won?
-  board[winning_combo.first]
-  end
- end
-
- def play
-  while !over?
-    turn
-  end
-  if won?
-    puts "Congratulations #{winner(board)}!"
-  elsif draw?
-    puts "Draw Game"
-  end
+#  def over?
+#   won? || draw?
+#  end
+# 
+#  def winner
+#   if winning_combo = won?
+#   board[winning_combo.first]
+#   end
+#  end
+# 
+#  def play
+#    while !over?
+#      turn
+#    end
+#    if won?
+#     puts "Congratulations #{winner(board)}!"
+#   elsif draw?
+#     puts "Draw Game"
+#   end
+end 
