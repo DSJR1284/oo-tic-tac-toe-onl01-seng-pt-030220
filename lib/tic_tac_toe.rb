@@ -81,8 +81,8 @@ class TicTacToe
     board[combo[1]] == board[combo[2]] &&
     position_taken?(combo[0])
     return combo
-  else 
-    return false  
+  else
+    return false
   end
   winning_combo
 end
