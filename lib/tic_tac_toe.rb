@@ -57,7 +57,13 @@ class TicTacToe
     def turn_count
       counter = 0
       while counter < @board.size
+        if position_taken?(@board,counter)
+          occupied_spaces += 1
     end
+    counter += 1 
+    end 
+    occupied_spaces
+  end 
 #
 #     def current_player(board)
 #       if turn_count(board).odd?
