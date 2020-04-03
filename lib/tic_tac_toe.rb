@@ -108,4 +108,4 @@ class TicTacToe
   elsif draw?
     puts "Draw Game"
   end
-end
+
