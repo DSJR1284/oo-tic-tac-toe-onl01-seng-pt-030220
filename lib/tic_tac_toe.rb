@@ -65,14 +65,14 @@ class TicTacToe
       end
       occupied_spaces
     end
-#
-#     def current_player(board)
-#       if turn_count(board).odd?
-#         "O"
-#       else
-#         "X"
-#       end
-#     end
+
+    def current_player
+      if turn_count(board).odd?
+        "O"
+      else
+        "X"
+      end
+    end
 #
 #     def won?(board)
 #     WIN_COMBINATIONS.each do|combo|
