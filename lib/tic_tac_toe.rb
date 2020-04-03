@@ -41,18 +41,18 @@ class TicTacToe
     def valid_move?(index)
       index.between?(0,8) && ! position_taken?(index)
     end
-#
-#     def turn(board)
-#       puts "Make Your Move Between 1-9"
-#       user_input = gets.strip
-#       index = input_to_index(user_input)
-#       if valid_move?(board, index)
-#         move(board, index, current_player(board))
-#         display_board(board)
-#       else
-#         turn(board)
-#       end
-#     end
+
+    def turn
+      puts "Make Your Move Between 1-9"
+      user_input = gets.strip
+      index = input_to_index(user_input)
+      if valid_move?(board, index)
+        move(board, index, current_player(board))
+        display_board(board)
+      else
+        turn(board)
+      end
+    end
 #
     def turn_count
       counter = 0
