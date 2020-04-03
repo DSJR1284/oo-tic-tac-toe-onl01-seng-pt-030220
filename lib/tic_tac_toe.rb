@@ -56,6 +56,7 @@ class TicTacToe
 #
     def turn_count
       counter = 0
+      occupied_spaces = 0
       while counter < @board.size
         if position_taken?(counter)
           occupied_spaces += 1
