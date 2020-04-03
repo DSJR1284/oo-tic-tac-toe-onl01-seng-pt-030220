@@ -86,7 +86,7 @@ class TicTacToe
  end
 
  def full?
-  turn_count(1==9)
+  turn_count
  end
 
 #  def over?(board)
