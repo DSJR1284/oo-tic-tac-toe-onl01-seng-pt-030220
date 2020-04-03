@@ -74,8 +74,7 @@ class TicTacToe
       end
     end
 
-    def won?
-      winning_combo = nil
+    def won? 
     WIN_COMBINATIONS.each do|combo|
     if board[combo[0]] == board[combo[1]] &&
     board[combo[1]] == board[combo[2]] &&
@@ -85,11 +84,11 @@ class TicTacToe
    end
   return false
  end
-#
-#  def draw?(board)
-#   !won?(board) && full?(board)
-#  end
-#
+
+ def full?
+  !won?(board) && full?(board)
+ end
+
 #  def over?(board)
 #   won?(board) || draw?(board)
 #  end
