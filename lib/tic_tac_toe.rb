@@ -73,14 +73,14 @@ class TicTacToe
         "X"
       end
     end
-#
-#     def won?(board)
-#     WIN_COMBINATIONS.each do|combo|
-#     board[combo[0]] == board[combo[1]] &&
-#     board[combo[1]] == board[combo[2]] &&
-#     position_taken?(board, combo[0])
-#   end
-# end
+
+    def won?
+    WIN_COMBINATIONS.each do|combo|
+    board[combo[0]] == board[combo[1]] &&
+    board[combo[1]] == board[combo[2]] &&
+    position_taken?(combo[0])
+  end
+end
 #
 #  def draw?(board)
 #   !won?(board) && full?(board)
